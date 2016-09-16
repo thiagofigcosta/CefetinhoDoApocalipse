@@ -1,6 +1,6 @@
-#include "AL.h"
+#include "AL.hpp"
 
-AL::AL() {
+AL::AL(bool musicOn,bool soundOn) {
     ALCdevice *device;                                                          //Create an OpenAL Device
     ALCcontext *context;                                                        //And an OpenAL Context
     device = alcOpenDevice(NULL);                                               //Open the device
@@ -10,6 +10,8 @@ AL::AL() {
     alListenerfv(AL_POSITION,    ListenerPos);                                  //Set position of the listener
     alListenerfv(AL_VELOCITY,    ListenerVel);                                  //Set velocity of the listener
     alListenerfv(AL_ORIENTATION, ListenerOri);
+    AL::soundOn=soundOn;
+    AL::musicOn=musicOn;
 };
 
 AL::AL(const AL& orig) {
@@ -21,6 +23,14 @@ AL::~AL() {
 vector<string> AL::soundName;
 vector<ALuint> AL::sounds;
 vector<ALuint> AL::buffers;
+vector<bool> AL::isMusic;
+bool AL::soundOn;
+bool AL::musicOn;
+ALfloat AL::ListenerPos[3] = { 0.0, 0.0, 0.0 };
+ALfloat AL::ListenerVel[3] = { 0.0, 0.0, 0.0 };
+ALfloat AL::ListenerOri[6] = { 0.0, 0.0, -1.0,  0.0, 1.0, 0.0 };
+ALfloat AL::SourcePos[3] = { 0.0, 0.0, 0.0 };
+ALfloat AL::SourceVel[3] = { 0.0, 0.0, 0.0 };
 
 bool AL::checkIfIsPlaying(int sound){
     ALint state;
@@ -31,21 +41,23 @@ bool AL::checkIfIsPlaying(int sound){
 }
 void AL::stopAllSoundsExcept(vector<int>&sounds){
     bool stop;
-    for(int i=0;i<this->sounds.size();i++){
+    for(int i=0;i<sounds.size();i++){
         stop=true;
         for(int j=0;j<sounds.size();j++)
             if(sounds[j]==i){
                 stop=false;
                 break;
             }
-        if(stop)alSourceStop(this->sounds[i]);
+        if(stop)alSourceStop(sounds[i]);
     }
 }
 bool AL::playSoundByName(string name){
     int i=0;
     for(string n:soundName)
         if(n==name){
-            alSourcePlay(sounds[i]);
+            if((isMusic[i]&&musicOn)||(!isMusic[i]&&soundOn))
+                if(!checkIfIsPlaying(i))
+                    alSourcePlay(sounds[i]);
             return true;
         }else
             i++;
@@ -55,6 +67,7 @@ bool AL::loadSound(char* path,string name,float vol,bool Loop){
     int currentLoading=sounds.size();
     sounds.push_back(NULL);
     buffers.push_back(NULL);
+    isMusic.push_back(Loop);
     ALboolean loop;
     if(Loop)
         loop=AL_TRUE;
@@ -145,7 +158,9 @@ bool AL::loadSound(char* path,string name,float vol,bool Loop){
 bool AL::playSound(int sound){
     if(sound>=sounds.size())
         return false;
-    alSourcePlay(sounds[sound]);
+    if((isMusic[sound]&&musicOn)||(!isMusic[sound]&&soundOn))
+        if(!checkIfIsPlaying(sound))
+            alSourcePlay(sounds[sound]);
     return true;
 }
 bool AL::stopSound(int sound){
@@ -153,4 +168,16 @@ bool AL::stopSound(int sound){
         return false;
     alSourceStop(sounds[sound]);
     return true;
+}
+void AL::setMusicState(bool musicOn){
+    AL::musicOn=musicOn;
+}
+void AL::setSoundState(bool soundOn){
+    AL::soundOn=soundOn;
+}
+ostream& operator<<(ostream &strm, const AL &al){
+    if(Util::DEBUG)
+        return strm <<"AL:["<<"Loaded Sounds("<<al.sounds.size()<<"),"<<
+                "Sound On("<<al.soundOn<<"),"<<"Music On("<<al.musicOn<<"),"<<"]\n";
+    return strm;
 }

@@ -1,4 +1,4 @@
-#include "Util.h"
+#include "Util.hpp"
 
 Util::Util() {
 };
@@ -11,6 +11,10 @@ Util::~Util() {
 
 bool Util::DEBUG=false;
 string Util::resourcesFolder="";
+int Util::left=13;
+int Util::right=45;
+int Util::up=9849526;
+int Util::down=552626;
 
 char* Util::newPath(char* path){
     if(resourcesFolder!=""){
@@ -29,7 +33,7 @@ char* Util::getDinamicPath(char* p1,int idx, char* p3){
     string str1(buffer);
     string str2(p3);
     out+=str1+str2;
-    
+
     return (char*) out.c_str();
 }
 
@@ -47,4 +51,10 @@ nTRectangle Util::nTRectangleSet(float x0,float y0,float x1,float y1,float z0,fl
     nTRectangle tmp;
     tmp.setRectangle(x0,y0,x1,y1,z0,z1);
     return tmp;
+}
+
+nTRectangle Util::getCollisionRectangle(nTPoint pos,nTPoint size){
+    //TODO:usar pos e size para descobrir o retangulo de colisão
+    nTRectangle collision;
+    return collision;
 }
