@@ -1,0 +1,808 @@
+# depslib dependency file v1.0
+1475820014 source:c:\users\nanotech corporation\desktop\the com\classes\al.cpp
+	"AL.hpp"
+
+1475820071 c:\users\nanotech corporation\desktop\the com\classes\al.hpp
+	<AL/al.h>
+	<AL/alc.h>
+	"Util.hpp"
+
+1453670176 c:\program files (x86)\codeblocks\mingw\include\al\al.h
+
+1453670176 c:\program files (x86)\codeblocks\mingw\include\al\alc.h
+
+1475872541 c:\users\nanotech corporation\desktop\the com\classes\util.hpp
+	<vector>
+	<string>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
+1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
+	<_mingw.h>
+
+1341006770 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\time.h
+	<_mingw.h>
+	<stddef.h>
+
+1475836951 source:c:\users\nanotech corporation\desktop\the com\classes\blocks.cpp
+	"Blocks.hpp"
+
+1475531308 c:\users\nanotech corporation\desktop\the com\classes\blocks.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Map.hpp"
+	"Scenes.hpp"
+
+1475805749 c:\users\nanotech corporation\desktop\the com\classes\gl.hpp
+	<GL/glew.h>
+	<GL/freeglut.h>
+	"../Libs/soil/SOIL.h"
+	"Util.hpp"
+	"Map.hpp"
+
+1469368778 c:\program files (x86)\codeblocks\mingw\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1341006772 c:\program files (x86)\codeblocks\mingw\include\inttypes.h
+	<_mingw.h>
+	<stdint.h>
+	<stddef.h>
+
+1473932086 c:\program files (x86)\codeblocks\mingw\include\stdint.h
+	<stddef.h>
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
+
+1426360528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1426360528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	<winsock2.h>
+	<winsock.h>
+	<ole2.h>
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winuser.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnt.h
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winerror.h
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\basetsd.h
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\pshpack4.h
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\poppack.h
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winver.h
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\dde.h
+
+1301111150 c:\program files (x86)\codeblocks\mingw\include\dlgs.h
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\commctrl.h
+	<prsht.h>
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\prsht.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\windef.h
+	<winnt.h>
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\wincon.h
+
+1301111160 c:\program files (x86)\codeblocks\mingw\include\winbase.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\wingdi.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnls.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnetwk.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winreg.h
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winsvc.h
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\cderr.h
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\ddeml.h
+
+1301111150 c:\program files (x86)\codeblocks\mingw\include\imm.h
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\lzexpand.h
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\mmsystem.h
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\nb30.h
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\basetyps.h
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcdcep.h
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnsi.h
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
+
+1341006772 c:\program files (x86)\codeblocks\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1301111160 c:\program files (x86)\codeblocks\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\pshpack2.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winperf.h
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1301111160 c:\program files (x86)\codeblocks\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\objfwd.h
+	<basetyps.h>
+
+1301111164 c:\program files (x86)\codeblocks\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnsip.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winspool.h
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winsock2.h
+	<windows.h>
+
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winsock.h
+	<windows.h>
+	<mswsock.h>
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\mswsock.h
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\objidl.h
+	<objfwd.h>
+
+1301111148 c:\program files (x86)\codeblocks\mingw\include\cguid.h
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\olectlid.h
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\oleauto.h
+	<oaidl.h>
+
+1301111154 c:\program files (x86)\codeblocks\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
+	<objfwd.h>
+
+1426360528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\soil.h
+
+1475600559 c:\users\nanotech corporation\desktop\the com\classes\map.hpp
+	"Util.hpp"
+	"GL.hpp"
+
+1475829954 c:\users\nanotech corporation\desktop\the com\classes\scenes.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Tutorials.hpp"
+	"mapEdit.hpp"
+	"Enemy.hpp"
+	"../Libs/Globals.h"
+
+1475816784 c:\users\nanotech corporation\desktop\the com\classes\mechanics.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Map.hpp"
+	"Tutorials.hpp"
+
+1475828049 c:\users\nanotech corporation\desktop\the com\classes\tutorials.hpp
+	"Util.hpp"
+	"GL.hpp"
+
+1475248759 c:\users\nanotech corporation\desktop\the com\classes\mapedit.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Blocks.hpp"
+	"../Libs/loadFiles.h"
+
+1475588899 c:\users\nanotech corporation\desktop\the com\libs\loadfiles.h
+	"Globals.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	"../Classes/Util.hpp"
+	"../Classes/AL.hpp"
+	"../Classes/GL.hpp"
+
+1475591264 c:\users\nanotech corporation\desktop\the com\libs\globals.h
+	"../Classes/Util.hpp"
+	"../Classes/Player.hpp"
+	"../Classes/AL.hpp"
+	"../Classes/GL.hpp"
+	"../Classes/Tutorials.hpp"
+
+1475818823 c:\users\nanotech corporation\desktop\the com\classes\player.hpp
+	"Util.hpp"
+	"Entity.hpp"
+
+1475819567 c:\users\nanotech corporation\desktop\the com\classes\entity.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Mechanics.hpp"
+
+1475686122 c:\users\nanotech corporation\desktop\the com\classes\enemy.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Entity.hpp"
+	"Player.hpp"
+
+1475818782 source:c:\users\nanotech corporation\desktop\the com\classes\bullet.cpp
+	"Bullet.hpp"
+	"AL.hpp"
+	"Scenes.hpp"
+
+1475429643 c:\users\nanotech corporation\desktop\the com\classes\bullet.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Entity.hpp"
+	"../Libs/Globals.h"
+
+1475813128 source:c:\users\nanotech corporation\desktop\the com\classes\enemy.cpp
+	"Enemy.hpp"
+	"Bullet.hpp"
+	"Scenes.hpp"
+	"../Libs/Globals.h"
+
+1475829155 source:c:\users\nanotech corporation\desktop\the com\classes\entity.cpp
+	"Entity.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"Blocks.hpp"
+
+1475872659 source:c:\users\nanotech corporation\desktop\the com\classes\gl.cpp
+	"GL.hpp"
+	"../Libs/GL.Callbacks.h"
+
+1474905104 c:\users\nanotech corporation\desktop\the com\libs\gl.callbacks.h
+	"../Classes/GL.hpp"
+	"../Classes/Util.hpp"
+	"../Classes/Player.hpp"
+	"../Classes/Scenes.hpp"
+	"../Libs/Globals.h"
+	"loadFiles.h"
+
+1475830407 source:c:\users\nanotech corporation\desktop\the com\classes\map.cpp
+	"Map.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"../Libs/Globals.h"
+	"Scenes.hpp"
+	"Blocks.hpp"
+	"Tutorials.hpp"
+	"Bullet.hpp"
+	"powerUp.hpp"
+
+1475033856 c:\users\nanotech corporation\desktop\the com\classes\powerup.hpp
+	"Util.hpp"
+	"../Libs/Globals.h"
+	"Mechanics.hpp"
+	"Entity.hpp"
+
+1475832838 source:c:\users\nanotech corporation\desktop\the com\classes\mapedit.cpp
+	"mapEdit.hpp"
+
+1475818625 source:c:\users\nanotech corporation\desktop\the com\classes\mechanics.cpp
+	"Mechanics.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"Blocks.hpp"
+
+1475832677 source:c:\users\nanotech corporation\desktop\the com\classes\player.cpp
+	"Player.hpp"
+	"GL.hpp"
+	"Mechanics.hpp"
+	"Enemy.hpp"
+	"Bullet.hpp"
+	"../Libs/Globals.h"
+	"Blocks.hpp"
+
+1475818781 source:c:\users\nanotech corporation\desktop\the com\classes\powerup.cpp
+	"powerUp.hpp"
+	"Scenes.hpp"
+
+1475832651 source:c:\users\nanotech corporation\desktop\the com\classes\scenes.cpp
+	"Scenes.hpp"
+	"Bullet.hpp"
+	"powerUp.hpp"
+	"AL.hpp"
+
+1475832336 source:c:\users\nanotech corporation\desktop\the com\classes\tutorials.cpp
+	"Tutorials.hpp"
+	"Scenes.hpp"
+
+1475100881 source:c:\users\nanotech corporation\desktop\the com\classes\util.cpp
+	"Util.hpp"
+
+1475831234 source:c:\users\nanotech corporation\desktop\the com\libs\gl.callbacks.cpp
+	"GL.Callbacks.h"
+
+1475591273 source:c:\users\nanotech corporation\desktop\the com\libs\globals.cpp
+	"Globals.h"
+
+1475831111 source:c:\users\nanotech corporation\desktop\the com\libs\loadfiles.cpp
+	"loadFiles.h"
+
+1474064204 source:c:\users\nanotech corporation\desktop\the com\libs\soil\image_dxt.c
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\image_dxt.h
+
+1474064204 source:c:\users\nanotech corporation\desktop\the com\libs\soil\image_helper.c
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\image_helper.h
+
+1474064204 source:c:\users\nanotech corporation\desktop\the com\libs\soil\soil.c
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\stb_image_aug.h
+	<stdio.h>
+
+1474064204 source:c:\users\nanotech corporation\desktop\the com\libs\soil\stb_image_aug.c
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1341006774 c:\program files (x86)\codeblocks\mingw\include\memory.h
+	<string.h>
+
+1341006770 c:\program files (x86)\codeblocks\mingw\include\assert.h
+	<_mingw.h>
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\stbi_dds_aug.h
+
+1474064204 c:\users\nanotech corporation\desktop\the com\libs\soil\stbi_dds_aug_c.h
+
+1475872492 source:c:\users\nanotech corporation\desktop\the com\tcg.main.cpp
+	"importLibs.h"
+
+1475836889 c:\users\nanotech corporation\desktop\the com\importlibs.h
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<vector>
+	<string>
+	<memory>
+	"Classes/GL.hpp"
+	"Classes/AL.hpp"
+	"Classes/Util.hpp"
+	"Classes/Scenes.hpp"
+	"Classes/Tutorials.hpp"
+	"Classes/Mechanics.hpp"
+	"Classes/Entity.hpp"
+	"Classes/Player.hpp"
+	"Classes/Enemy.hpp"
+	"Classes/mapEdit.hpp"
+	"Classes/powerUp.hpp"
+	"Classes/Bullet.hpp"
+	"Libs/Globals.h"
+	"Libs/GL.Callbacks.h"
+	"Libs/loadFiles.h"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\al.cpp
+	"AL.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\al.hpp
+	<AL/al.h>
+	<AL/alc.h>
+	"Util.hpp"
+
+1476443545 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\util.hpp
+	<vector>
+	<string>
+	<cstdlib>
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\blocks.cpp
+	"Blocks.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\blocks.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Map.hpp"
+	"Scenes.hpp"
+
+1476443523 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\gl.hpp
+	<GL/glew.h>
+	<GL/freeglut.h>
+	<time.h>
+	"../Libs/soil/SOIL.h"
+	"Util.hpp"
+	"Map.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\soil.h
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\map.hpp
+	"Util.hpp"
+	"GL.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\scenes.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Tutorials.hpp"
+	"mapEdit.hpp"
+	"Enemy.hpp"
+	"../Libs/Globals.h"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\mechanics.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Map.hpp"
+	"Tutorials.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\tutorials.hpp
+	"Util.hpp"
+	"GL.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\mapedit.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Blocks.hpp"
+	"../Libs/loadFiles.h"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\loadfiles.h
+	"Globals.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	"../Classes/Util.hpp"
+	"../Classes/AL.hpp"
+	"../Classes/GL.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\globals.h
+	"../Classes/Util.hpp"
+	"../Classes/Player.hpp"
+	"../Classes/AL.hpp"
+	"../Classes/GL.hpp"
+	"../Classes/Tutorials.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\player.hpp
+	"Util.hpp"
+	"Entity.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\entity.hpp
+	"Util.hpp"
+	"GL.hpp"
+	"Mechanics.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\enemy.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Entity.hpp"
+	"Player.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\bullet.cpp
+	"Bullet.hpp"
+	"AL.hpp"
+	"Scenes.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\bullet.hpp
+	"Util.hpp"
+	"Mechanics.hpp"
+	"Entity.hpp"
+	"../Libs/Globals.h"
+
+1476375593 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\enemy.cpp
+	"Enemy.hpp"
+	"Bullet.hpp"
+	"Scenes.hpp"
+	"../Libs/Globals.h"
+
+1476402289 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\entity.cpp
+	"Entity.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"Blocks.hpp"
+
+1476443621 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\gl.cpp
+	"GL.hpp"
+	"../Libs/GL.Callbacks.h"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\gl.callbacks.h
+	"../Classes/GL.hpp"
+	"../Classes/Util.hpp"
+	"../Classes/Player.hpp"
+	"../Classes/Scenes.hpp"
+	"../Libs/Globals.h"
+	"loadFiles.h"
+
+1476404474 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\map.cpp
+	"Map.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"../Libs/Globals.h"
+	"Scenes.hpp"
+	"Blocks.hpp"
+	"Tutorials.hpp"
+	"Bullet.hpp"
+	"powerUp.hpp"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\classes\powerup.hpp
+	"Util.hpp"
+	"../Libs/Globals.h"
+	"Mechanics.hpp"
+	"Entity.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\mapedit.cpp
+	"mapEdit.hpp"
+
+1476402545 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\mechanics.cpp
+	"Mechanics.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"Blocks.hpp"
+
+1476406506 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\player.cpp
+	"Player.hpp"
+	"GL.hpp"
+	"Mechanics.hpp"
+	"Enemy.hpp"
+	"Bullet.hpp"
+	"../Libs/Globals.h"
+	"Blocks.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\powerup.cpp
+	"powerUp.hpp"
+	"Scenes.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\scenes.cpp
+	"Scenes.hpp"
+	"Bullet.hpp"
+	"powerUp.hpp"
+	"AL.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\tutorials.cpp
+	"Tutorials.hpp"
+	"Scenes.hpp"
+
+1476443412 source:c:\users\nanotech corporation\desktop\cache\the.com-game\classes\util.cpp
+	"Util.hpp"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\gl.callbacks.cpp
+	"GL.Callbacks.h"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\globals.cpp
+	"Globals.h"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\loadfiles.cpp
+	"loadFiles.h"
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\image_dxt.c
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\image_dxt.h
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\image_helper.c
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\image_helper.h
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\soil.c
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\stb_image_aug.h
+	<stdio.h>
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\stb_image_aug.c
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\stbi_dds_aug.h
+
+1476236567 c:\users\nanotech corporation\desktop\cache\the.com-game\libs\soil\stbi_dds_aug_c.h
+
+1476236567 source:c:\users\nanotech corporation\desktop\cache\the.com-game\tcg.main.cpp
+	"importLibs.h"
+
+1476442516 c:\users\nanotech corporation\desktop\cache\the.com-game\importlibs.h
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<vector>
+	<string>
+	<memory>
+	<time.h>
+	"Classes/GL.hpp"
+	"Classes/AL.hpp"
+	"Classes/Util.hpp"
+	"Classes/Scenes.hpp"
+	"Classes/Tutorials.hpp"
+	"Classes/Mechanics.hpp"
+	"Classes/Entity.hpp"
+	"Classes/Player.hpp"
+	"Classes/Enemy.hpp"
+	"Classes/mapEdit.hpp"
+	"Classes/powerUp.hpp"
+	"Classes/Bullet.hpp"
+	"Libs/Globals.h"
+	"Libs/GL.Callbacks.h"
+	"Libs/loadFiles.h"
+
