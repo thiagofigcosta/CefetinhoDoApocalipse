@@ -1,4 +1,4 @@
-#include "Util.h"
+#include "Util.hpp"
 
 Util::Util() {
 };
@@ -9,14 +9,28 @@ Util::Util(const Util& orig) {
 Util::~Util() {
 }
 
-bool Util::DEBUG=false;
+bool Util::DEBUG=true;
 string Util::resourcesFolder="";
+int Util::left=13;
+int Util::right=45;
+int Util::up=9849526;
+int Util::down=552626;
+char* Util::mallocChar=(char*)malloc(sizeof(char));
 
 char* Util::newPath(char* path){
     if(resourcesFolder!=""){
         string tmp(path);
         tmp=resourcesFolder+tmp;
-        path=(char*)tmp.c_str();
+        if(1){
+            mallocChar=(char*)realloc(mallocChar,(tmp.size()+1)*sizeof(char));
+            mallocChar[0]='\0';
+            for(int i=0;i<tmp.size();i++)
+                 mallocChar[i]=tmp[i];
+            mallocChar[tmp.size()]='\0';
+            return mallocChar;
+        } 
+        char*bug=(char*)tmp.c_str();
+        return bug;
     }
     return path;
 }
@@ -29,8 +43,17 @@ char* Util::getDinamicPath(char* p1,int idx, char* p3){
     string str1(buffer);
     string str2(p3);
     out+=str1+str2;
+    if(1){
+        mallocChar=(char*)realloc(mallocChar,(out.size()+1)*sizeof(char));
+        mallocChar[0]='\0';
+        for(int i=0;i<out.size();i++)
+             mallocChar[i]=out[i];
+        mallocChar[out.size()]='\0';
+        return mallocChar;
+    }
+    char*bug=(char*)out.c_str();
     
-    return (char*) out.c_str();
+    return bug;
 }
 
 nTColor Util::nTColorSet(float R,float G, float B, float A){
@@ -48,3 +71,14 @@ nTRectangle Util::nTRectangleSet(float x0,float y0,float x1,float y1,float z0,fl
     tmp.setRectangle(x0,y0,x1,y1,z0,z1);
     return tmp;
 }
+
+nTRectangle Util::getCollisionRectangle(nTPoint pos,nTPoint size){
+    nTPoint inf_left, up_right;
+    nTRectangle collision;
+
+    inf_left.setPoint(pos.x-(size.x/2) ,pos.y-(size.y/2), pos.z-(size.z/2)); //vértice inferior esquerdo
+    up_right.setPoint(pos.x+(size.x/2) ,pos.y+(size.y/2), pos.z+(size.z/2)); //vértice superior direito
+    collision.setRec(inf_left, up_right);
+    return collision;
+}
+
