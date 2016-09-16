@@ -1,6 +1,6 @@
 Classes:
   mouseHandle(rectanle colission,GLuint tex, color color,(*void)function(void))
-  -static mechanics(gravity,vspeed,hspeed)
+  -static mechanics(static gravity,vspeed,hspeed)
     -entity(point pos,rectanle size,GLuint tex) [return size(x,y)] definir ponto de posição
       -player
       -enemy
