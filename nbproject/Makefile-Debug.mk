@@ -35,14 +35,22 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/CdA.main.o \
 	${OBJECTDIR}/Classes/AL.o \
+	${OBJECTDIR}/Classes/Blocks.o \
+	${OBJECTDIR}/Classes/Enemy.o \
+	${OBJECTDIR}/Classes/Entity.o \
 	${OBJECTDIR}/Classes/GL.o \
+	${OBJECTDIR}/Classes/Map.o \
+	${OBJECTDIR}/Classes/Mechanics.o \
+	${OBJECTDIR}/Classes/Player.o \
 	${OBJECTDIR}/Classes/Util.o \
+	${OBJECTDIR}/Libs/GL.CallBacks.o \
+	${OBJECTDIR}/Libs/loadFiles.o \
 	${OBJECTDIR}/Libs/soil/SOIL.o \
 	${OBJECTDIR}/Libs/soil/image_DXT.o \
 	${OBJECTDIR}/Libs/soil/image_helper.o \
-	${OBJECTDIR}/Libs/soil/stb_image_aug.o
+	${OBJECTDIR}/Libs/soil/stb_image_aug.o \
+	${OBJECTDIR}/TCG.main.o
 
 
 # C Compiler Flags
@@ -63,31 +71,66 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cefetinhodoapocalipse
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/the.com-game
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cefetinhodoapocalipse: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/the.com-game: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cefetinhodoapocalipse ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/CdA.main.o: CdA.main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CdA.main.o CdA.main.cpp
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/the.com-game ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Classes/AL.o: Classes/AL.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Classes
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/AL.o Classes/AL.cpp
 
+${OBJECTDIR}/Classes/Blocks.o: Classes/Blocks.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Blocks.o Classes/Blocks.cpp
+
+${OBJECTDIR}/Classes/Enemy.o: Classes/Enemy.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Enemy.o Classes/Enemy.cpp
+
+${OBJECTDIR}/Classes/Entity.o: Classes/Entity.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Entity.o Classes/Entity.cpp
+
 ${OBJECTDIR}/Classes/GL.o: Classes/GL.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Classes
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/GL.o Classes/GL.cpp
 
+${OBJECTDIR}/Classes/Map.o: Classes/Map.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Map.o Classes/Map.cpp
+
+${OBJECTDIR}/Classes/Mechanics.o: Classes/Mechanics.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Mechanics.o Classes/Mechanics.cpp
+
+${OBJECTDIR}/Classes/Player.o: Classes/Player.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Classes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Player.o Classes/Player.cpp
+
 ${OBJECTDIR}/Classes/Util.o: Classes/Util.cpp 
 	${MKDIR} -p ${OBJECTDIR}/Classes
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Classes/Util.o Classes/Util.cpp
+
+${OBJECTDIR}/Libs/GL.CallBacks.o: Libs/GL.CallBacks.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Libs
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Libs/GL.CallBacks.o Libs/GL.CallBacks.cpp
+
+${OBJECTDIR}/Libs/loadFiles.o: Libs/loadFiles.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Libs
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Libs/loadFiles.o Libs/loadFiles.cpp
 
 ${OBJECTDIR}/Libs/soil/SOIL.o: Libs/soil/SOIL.c 
 	${MKDIR} -p ${OBJECTDIR}/Libs/soil
@@ -109,13 +152,18 @@ ${OBJECTDIR}/Libs/soil/stb_image_aug.o: Libs/soil/stb_image_aug.c
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Libs/soil/stb_image_aug.o Libs/soil/stb_image_aug.c
 
+${OBJECTDIR}/TCG.main.o: TCG.main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TCG.main.o TCG.main.cpp
+
 # Subprojects
 .build-subprojects:
 
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cefetinhodoapocalipse
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/the.com-game
 
 # Subprojects
 .clean-subprojects:

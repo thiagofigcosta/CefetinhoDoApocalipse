@@ -1,17 +1,14 @@
-Classes:
-  mouseHandle(rectanle colission,GLuint tex, color color,(*void)function(void))
-  -static mechanics(static gravity,vspeed,hspeed)
-    -entity(point pos,rectanle size,GLuint tex) [return size(x,y)] definir ponto de posição
-      -player
-      -enemy
-      -intecampi
-  map(int idx,map[][])[fazer map com vector 2D e salvar em arquivo]
-  static block(int type, sizeXY,GLuint tex)
-  scenes()
+TODO:
+  -fazer funcoes com marcador TODO no codigo
+  -Classes:
+    scenes
+    powerups
+    bullet(intecampi)
+  -editor de mapa
+  -espada
+  -sons
+  -sprites restantes
   
-  Funcions:
-  load sounds()
-  load texts();
-  load strings();
-  load maps()
-  settings()
+ISSUES:
+  -GL::textureLoad nao funcionando?
+  -sistema novo de gravidade funcionando?

@@ -1,4 +1,4 @@
-#include "Util.h"
+#include "Util.hpp"
 
 Util::Util() {
 };
@@ -47,4 +47,10 @@ nTRectangle Util::nTRectangleSet(float x0,float y0,float x1,float y1,float z0,fl
     nTRectangle tmp;
     tmp.setRectangle(x0,y0,x1,y1,z0,z1);
     return tmp;
+}
+
+nTRectangle Util::getCollisionRectangle(nTPoint pos,nTPoint size){
+    //TODO:usar pos e size para descobrir o retangulo de colisão
+    nTRectangle collision;
+    return collision;
 }

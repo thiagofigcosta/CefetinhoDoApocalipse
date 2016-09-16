@@ -1,10 +1,12 @@
-#include "GL.h"
+#include "GL.hpp"
 
 GL::GL(string name,float FPS,GLbitfield displayMode,int windowXsize,int windowYsize,nTColor clearcolor,bool blend,vector<GLenum>&enables,int argc, char** argv) {
     this->FPS=FPS;
     glutInit(&argc, argv);
     glutInitDisplayMode(displayMode);
     glutInitWindowSize(windowXsize, windowYsize);
+    defaultSize.setPoint(windowXsize,windowYsize,0);
+    currentSize=defaultSize;
     glutInitWindowPosition(0, 0);
     glutCreateWindow(name.c_str());
     glClearColor(clearcolor.R, clearcolor.G, clearcolor.B, clearcolor.A);
@@ -12,7 +14,7 @@ GL::GL(string name,float FPS,GLbitfield displayMode,int windowXsize,int windowYs
         glEnable(en);
     if(blend)
         glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    
+
     glutDisplayFunc(drawScene);
     glutReshapeFunc(reshape);
     glutKeyboardFunc(keyboard);
@@ -31,6 +33,14 @@ GL::~GL() {
 float GL::FPS;
 nTColor GL::currentColor=Util::nTColorSet(1,1,1,1);
 void* GL::currentFont=GLUT_BITMAP_TIMES_ROMAN_24;
+vector<GLuint> GL::textures;
+vector<string> GL::textureNames;
+nTPoint GL::defaultSize;
+nTPoint GL::currentSize;
+bool GL::isPaused=false;
+bool GL::leftMouseClicked=false;
+bool GL::leftMouseReleased=false;
+nTPoint GL::mousePos;
 
 void GL::setFPS(float FPS){
     GL::FPS=FPS;
@@ -44,15 +54,21 @@ float GL::getMs(){
 void GL::start(){
     glutMainLoop();
 }
-void GL::loadTexture(GLuint &tex,char* path){
-    tex=SOIL_load_OGL_texture(Util::newPath(path),SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
+GLuint GL::loadTexture(string name,char* path){
+    GLuint temp=SOIL_load_OGL_texture(Util::newPath(path),SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
+    textures.push_back(temp);
+    textureNames.push_back(name);
+    return temp;
 }
-void GL::loadTextures(vector<GLuint> &tex,int nOfTex,char* path){
-    tex.clear();
+vector<GLuint> GL::loadTextures(string name,int nOfTex,char* path){
+    vector<GLuint> tex;
     for(int i=0;i<nOfTex;i++){
         tex.push_back(NULL);
         tex[i]=SOIL_load_OGL_texture(Util::newPath(Util::getDinamicPath(path,i,".png")),SOIL_LOAD_AUTO,SOIL_CREATE_NEW_ID,SOIL_FLAG_INVERT_Y);
+        textures.push_back(tex[i]);
+        textureNames.push_back(Util::getDinamicPath((char*)name.c_str(),i,""));
     }
+    return tex;
 }
 void GL::setColor(nTColor color){
     GL::currentColor=color;
@@ -161,43 +177,21 @@ void GL::drawPolygon(nTPoint point,float radius,int edges){
     }
     glEnd();
 }
-    
-    
-
-
-
-
-void drawScene(void){
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-     
-    GL::drawRectangle(Util::nTRectangleSet(0,0,50,50,0,0),Util::nTColorSet(1,1,0,1));
-  
-    
-    glutSwapBuffers();
+GLuint GL::getTextureByName(string name){
+    int i=0;
+    for(string n:textureNames)
+        if(n==name){
+            return textures[i];
+        }else
+            i++;
+    return 0;
 }
-void reshape(int width, int height){
-   glViewport(0, 0, width, height);
-   glMatrixMode(GL_PROJECTION);
-   glLoadIdentity();
-   glOrtho(0, 100, 0, 100, -1, 1);
-   glMatrixMode(GL_MODELVIEW);
-   glLoadIdentity();
+bool GL::buttonBehave(nTRectangle collision,nTColor pressedColor,GLuint tex,void*clickFunction(void),void*releaseFunction(void)){
+    //TODO: fazer funcao do botao, antes de chamar as funcoes de click e release do botao verificar se elas sao NULL
 }
-void keyboard(unsigned char key, int x, int y){
-
-}
-void update(int n){
-    
-    
-    glutPostRedisplay();
-    glutTimerFunc(GL::getMs(), update, 0);
-}
-void mousePress(int button,int state,int x,int y){
-    
-}
-void mousePassiveMotion(int x,int y){
-    
-}
-void mouseActiveMotion(int x,int y){
-    
+ostream& operator<<(ostream &strm, const GL &gl) {
+    if(Util::DEBUG)
+        return strm <<"GL:["<<"FPS("<<gl.FPS<<"),"<<"CurrentColor("<<"R:"<<gl.currentColor.R<<" G:"<<gl.currentColor.G<<" B:"<<gl.currentColor.B<<" A:"<<gl.currentColor.A<<"),"<<
+                "Loaded Texutres("<<gl.textures.size()<<"),"<<"ScreenSize("<<"x:"<<gl.currentSize.x<<" y:"<<gl.currentSize.y<<"),"<<"Is paused("<<gl.isPaused<<"),"<<"]\n";
+    return strm;
 }
