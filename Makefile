@@ -2,7 +2,7 @@ FORMAT=.cpp
 CC=g++
 SRC=$(wildcard *$(FORMAT))
 CLASSES=$(wildcard Classes/*$(FORMAT))
-EXEC=CdA
+EXEC=TCG
 CFLAGS=-w -Wall -std=c++11
 LDFLAGS=-lglut -lGLU -lGL -lm -lopenal -lGLEW -lSOIL
 
