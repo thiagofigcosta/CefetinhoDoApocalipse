@@ -1,70 +1,157 @@
-# CefetinhoDoApocalipse
+# The.COM GAME
 
-Método de Ataque::::
+-----------------------THE LEGENDS OF DECOM------------------------
+-------------------------------------------------------------------
+-------------------------Bernard Menezes---------------------------
+--------------------------Thiago F Costa---------------------------
+--------------------------Tiago Araújo-----------------------------
 
-As setas indicaram o andar;
-o ataque deverá ser direcionado para o sentido da seta clicada;
-o default será o ataque para frente.
-Shift corre;
-Tomar dano perde a espada;
-Quando toma dano ele fica temporariamente invencível;
 
-Estado/Animacoes do Player::::
+A ideia do jogo é mostrar a trajetória do nosso herói cefetiano no período do técnico até a graduação.
 
-0 - Idle; (3 sprites)
-1 - Walking (3);
-2 - Running (4)
-3 - Jumping (1);
-4 - stdAtacking(1)(1)(1)(1);
-5 - stdSpecial Atack (4) kamehameha;
-6 - Damage (Animação de dano será o personagem piscando ;) );
-7 - Die;
-ID de outras animacoes entram seguindo a sequencia:
-8-spawn
-.
-.
-.
-n-atks
+É preciso muito esforço para passar nas provas, conseguir vencer o ENEM, manter o coeficente alto, terminar
+o TCC
+, enfim são muitas as dificuldades. A aplicação ainda contém uma ferramenta de editor de mapas,
 
-Inimigos ::::
+assim você pode além de trabalhar suas habilidades no jogo, mostrar seu lado criativo!!
 
-Boos no final de cada fase;
-Inimigos triviais ficarão andando de um lado para outro;
+Ferramentas:
+*Editor de mapas -> Feito para construções lógicas, (uma entrada de teletransporte, deve ter uma saída...);
+*PowerUp e Baús (quebram ao serem atingidos por um ataque) -> + 1 vida, upgrade de espada, regresso de espada ou deixa player invencível;
+*Bloco de mola -> Impulsiona player;
+*Blocos decorativos;
+*Blocos maciços -> Possuem colissão;
+*Blocos não maciços -> Sem colissão;
+*Blocos com movimento vertical;
+*Blocos com movimento horizontal;
+*Portas e Canos -> Teletransportam o personagem ao apertar para baixo;
+*Inimigos -> Vida cheia = F, vida mínima = A;
+*BOSS -> Não possui movimento, porém não o subestime;
+*3 níveis (cefetinho, graduação e pós-graduação);
+*Cálculo de coeficiente de acordo com seu desempenho na fase;
+*Blocos tematicos -> Lançador de Intercampi, lançador de Erro 404 e bloco de TP (metas da fase);
+*Blocos destrutivos;
+*CheckPoints -> No formato de diploma, salvam sua ultima posição;
+*Opções -> Ativa e desativa músicas e sons;
+*Modo campanha e modo livre (permite jogar no mapa criado);
 
-Struct Configurations :::::
+Formas de levar dano:
+*Atingido por inimigos;
+*Atingido por parabolóides hiperbólicos lançados pelo BOSS (teste sua agilidade ao defender com a espada);
+*Atingido por bloco vertical de cacto;
+*Atingido pelo Error 404;
+*Atingido pelo intercampi;
+*Contato com lava;
 
-Musica;
-Sons;
-Lives;
-CurrentMap;
-CurrentCheckPoint;
-AmountofMaps;
-Tipo de Espada;
-
-Tipos de Bloco :::::
-
-0 -> Ar;
-entre 1 - 100 -> Blocos estáticos com texturas diferentes;
-entre 101 - 200 -> Blocos que atiram;
-entre 201 - 250-> Blocos que mexem horizontalmente;
-entre 251 - 300-> Blocos que mexem verticalmente;
-301 a 325 -> Upgrades (espada, invencível, kamekameha, vida extra, dano);
-326 a 350 -> Blocos que destroem;
-351 a 375 -> Blocos invisíveis;
-376 a 400 -> Blocos de liquidos/dano
-401 a 450 -> Blocos decorativos(transparentes)
-451 a 475 -> Alavancas(destroem blocos destrutivos com mesmo id em modulo)
-476 a 500 -> Baus 
-501 a 525 -> Jump Boost
-666 -> ponto final da fase
-
-1000 -> Spawn do player;
-2000 a 3000 -> Spawn de Inimigos;
-4000 a 4012 -> CheckPoints (quantidade depende do tamanho da fase);
-Maiores que 5000 -> Spawn de Boss;
-Menores que 0 -> Blocos de Teletransporte(Vai para o primeiro bloco encontrado com o mesmo valor)
+HUD:
+Mostra o nível de espada (corações) no instante, quantas vidas extras o jogador tem, a fase que se encontra e o tempo gastado na mesma.
+Obs: Quando o jogador perde todas suas vidas extras, ele é jubilado!! ;(
 
 
 
+ATENCAO. OS MAPAS OFICIAIS DO MODO CAMPANHA ESTARAO DISPONIVEIS NO DIA 11/10/2016
+NO LINK = http://www.4shared.com/zip/da-Vz1CMce/TheCOMMaps.html
 
+para instalar é so substituir a pasta "Maps" baixada pela maps do seu jogo. Até la se divirta
+com o modo de criacao de mapas customizados :D
 
+(Jogo desenvolvido e otimizado para Linux(preferencia de instalacao))
+
+Rodar em Windows:
+Abrir .exe
+Link = http://www.4shared.com/zip/1tTfWqcCba/TheCOM-w32.html
+
+Rodar em Linux:
+É obrigatório ter instalado em seu computador:
+*Freeglut;
+*GL;
+*GLEW;
+*Openal;
+Baixar o diretório em = https://github.com/thiagofigcosta/The.COM-Game
+Abrir terminal na pasta inicial do diretório e executar utilizando "make run".
+
+O jogo foi desenvolvido para o evento "DECOM Celebrations", logo não tem fins lucrativos.
+                             `;';;;;,,;;';;';;';:::''';,,;;;;;;:;';;'                            
+                            `;';;;;,,,;;';;';;';';';@;;;;;;;;';';;;;'                            
+                          .'';';;;,,,,;;;;'';;;::;+@@@';;;';;,,:;;:;;`                        
+                         :';;;;;;;,,,,;;;;'',;;;:'@@'';;;;';;,,,;;;;;`                           
+                         ';;;;;;;;,,,,,,,;',,;;;''@@''';';;';,,,:;;;'                            
+                         ;;;;;;;;;,,,,,,,;;,,,,''@@@@'';;;;;;,,,;;';'                            
+                        :;;;;;;;;;,,,,,;;;;,,..,'@@@@@'';:;,,,,,;:'''                            
+                        ';;;;;;;;,,,,,,:;;;,,.,'@@@@@@@':,,,,,,,;;'''                            
+                        ';;;;;;';,,,,,,;;;;,.;''@@@@@@@#.;;,,';,;;'': `                          
+                       .';;;;;;;;,;;,,;;;;:,,'';@@@@@@@@,;;;;;;,;;;' ;                           
+                        ';;;;;;;;;;';;;;;;:,'';@@@@@@@@@';;;''':,;;'.'                           
+                        ;;;;;;;;;;;'';;;;;:'@@@@@@@@@@@@@.';;;';,;;'+'                           
+                        ;;;;;';,;;;';;;;;+'@@@@@@@@@@@@@@''''';;:,;';'                           
+                   '   ;;;;';';,;;;';;;;@@@@@@@@@@@@@@@@@;,';;;;;,:;;;'                          
+                       '';;,;;,,;;'';;;'#@@@@@@@@@@@@@@@@@'';;;;;,,,;;''                         
+                       '';;,;:,,;;'';;'@@@@@@@@@@@@@@@@@@@@':;;;;;,,,;:'                         
+                      '';;;,:,,,;;'';;'#@@@@@@@@@@@@@@@@@@@@';;;;;,,,,;'                         
+                      ';;;;,,,,,;''';;@@@@@@@@@@@@@@@@@@@@@@'';;;;,,,,;;:                        
+                     ;';;';,,,,;''';,'#@@@@@@@@@@@@@@@@@@@@@@#';;;,,,,;;'                        
+                     ';;;;;,,,;'''';,@@@@@@@@@@@@@@@@@;@@@@@@@@#;;,,,,;;;'                       
+                    :;;;;;;,,:'''';;;@@@@@@@@@@@@@@@@@@@@@@@@@;@';;,,,;;;'                       
+                    ';;;;;;,,:''';,:@+@@@@@@@@@@@@@@@@@@@@@@@@@@@';,,,;;;;                       
+                    ;;;;;;;,,,;;;,,;@@@@@@@@@@@#+@@@@@@@@@@@@@@#@';:,,;;;,                       
+                    ;;;;;;':,,,,,,;;+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@';,,:;'.                       
+                    ;;;;;;';,,,,;;;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@';,,:'',                       
+                    ;;;;;';:,,;;;;;;@@@@@@@@@@@'::;::@@@@@@@@@@@@#'':,:;+'.                      
+                    ;;;;;';,,;;;;;'@@@@@@@@+:;@@@@@@@@@@@@@@@@@@@@@';;;'#++:`    +               
+                    ';;;;';:;'';.;;@@@@@@@@@@@;;::::::@@@@@@@@@@@@;+';'''#'';   +.               
+                    '';;;';;'';'#'@@@@@@@@@:#@@@@@@@@@@@@:@@@@@@@@@@+''''@''+`                   
+                 '    '''''''''@@@@@@@@@:+@@@@:::::;::;@@@@:;@@@@@@@@+';'+#'',                   
+                      `';;'''''#;@@@@@:@@@;::#@@@@@@@@@;,:;@@;+@@@@@@@''''@'''                   
+                      ;;;;''''@@@@@@@@@@:;@@@@@@@;;;@@@@@@@;:@@@@@@@@#+'''+@'',                  
+                     .;;;;'''+#;@@@@@@:@@@@;;:,:::::::::,@@@@:;@@@@@@@#'';'@'''`                 
+                     '''''';'@'@@@@@@:@@@;;;::,,::::,,:::.:;@@@:@@@@@@@'';;'@';+`                
+                    '''+''';'#@@@@@;@@@:;;::;;@@@@@@@@@;,,;;;'@@'@@@@@#@';,;+';;'.               
+                   '';'+'';;@;@@@@:@@;:;;;@@@@@@@@@@@@@@@@@;;;:@@@@@@@@@';,;;+';;'               
+                  `;;'@''';'#@@@@:@@:;:#@@@@@@@@@,`@@@@@@@@@@';;;@@@@@@@#';,;'';;;'              
+                  ';;++'';;@@@@@;@@::;@@@@@@@@@@'   @@@@;@@@@@@;;;@@@@@@'';::;'';;;`             
+                 :;;'+'';;'@@@@@@@::@@@@@@;+@@@@;  `@@@@@+@@@@@@@;;@@@@@@';;:;'';;;'             
+                ;';;+';;;;@@@@@@@:@@@@@@@++@@@@@@,`:@@@@@+++@@@@@@';@@@@@;;;;;''';;;'            
+             ;`;';;;;;;,,+#@@@@@:@@@@@@@@''@@@@@@@@@@@@@@'++;@@@@@@@@@@@@';;;;''+;;;',           
+             ;''';;';,,,;@@@@@@'@@@@`@:++++@@@@@@@@@@@@@@++++;'@ @@@@@@@@@;;;;;'+';;;'           
+           `'''';;;';,,,;:@@@@@@@@@@`;::;++@@@@@@@@@@@@@@'++++'@  @@@@@@@@';;;;''';;;;           
+          .;'';;;;;';,,;+@@@@@@@@ @@`@:,+++@@@@@@@@@@@@@@++++#@@  @@@@@@@@';;;;;'';;;;'          
+          ;;'';;;;'':,,;;@@@@@@   @: @@@;+++@@@@@@@@@@@@@++;@@@@   @@@@@@@#';;;;;;;;;;'          
+         ';;'';;;'';,:.'@@@@@@@      @:;@@++@@@@@@@@@@@@'+;@@@@@     `@@@@@';;;';;;;;;'          
+        ,;';+';;;;';,::'@@@@@@@@     @@'+';++@@@@@@@@@@@++#++@@`   ` @@@@@@@';;;;;;';;';         
+        ;;;;+';;'';;:;'@@@@@@@@@@     '@@+@+++@@@@@@@@;+++@;@;@    `@@@@@@@@@';:;;;;':''         
+       ';';''';;;;;;;';@@@@@@@@@@@`   @:'++++;++@@@@;++'+++@+@@   @@@@@'@@@@@@';;;;;;:;'         
+       ;;''''';;;;;;';@@@@@@@@@@@;@@ `@;+@@;+@+'++++++++@+';+'   @@:@@:@@@@@@@#';;;;;;;'         
+       ;;;'''';;;;;;'@@@@@@@@@@@@@+@@: @@;+@@+#@+;;+';@++@+;@@ @@;:@@;@@@@@@@@@';;;;;;'':        
+      ;;';'''';;;;;;;@@@@@@@@@@@@@@:;@@ @:;@@@+++#;+;@@;@++@@@@@::@@#@@@@@@@@@@';;;;;;+''        
+      ;;'''''';;;;;'@@@@@@@@@@@@@@@@:,@@@@@@#@+'+@;+'++@+@;@@@@;'@@@:@@@@@@@@@@+;;;;;;;''`       
+     ,;;;''''';;;'';@@@@@@@@@@:@@@@@@@.:@@@@@@+@+@;;+;+@@@@@@#+@@@@:@@@@'@@@@@@@';;;;;;;;'       
+     ';;;''';';;;'.@@@@@@@@@;@@@@:@@:@@:,:@@@@;@+@:@,@:@@@@;;@@@@@#:@:@@@@@@@@@@#;;;;;;;;;'      
+     ;;';''';;;;;''@@@@@@@@@@@@;@@:@@@#@@:,:@@@@@@@@@@@@;::'@@;@@@:@:;@@@@@@@@@@@';;;;;;;;'      
+    ';;'''';;;;;;'#@@@@@@@@@@@@@@@@:@@@:;@@::,::;@@@;:,.,:@@;;@@@:@;:@@@@@@@@@@@@+:;;;;;;''      
+    ';;'''';;;;;;'#@@@@@@@@@@@@@@@@@:@@@@::@@@::::,,::;@@;::@@@;:@;:@@@@@@@@@@@@@':;;;;;';'      
+    ;;;;'';;;;;;;'#@@@@@@@@@@@@@@@@@@::@@@@::::+@@@@@;:::;@@@@:#@@@@@@@@@@@@@@@@@;,;'';;+'''     
+   .;;';;'';,;;;'''@'@@@@@@@;@@@@@@@@@@::@@@@@:::::::::@@@@@::@@@@@@@@@@@@@@@@@@@@.'';';;';'     
+   :;;'';';;:;;;''''##@@++;#;#@@@:@@@@@@@:;@@@@@@+;@@@@@@::@@@@@@@@@@@@@@@@@@@@@@@,,;;;;;';;'    
+   ';;'';';,:;;++';;'''++####'@#+#;'@@@@@@@@:::;;;;::::::@@@@@@@@@@@@@@@@@@@@@@@@@'.';;;;;';;    
+   ';;';;;;,,;'''';;;'''''''++'####;;@@@#:@@@@@@:::::@@@@@@+@@@@;@@@@@@@@@@@@@@@@@'..,:;;;;';;   
+   ';;;;;;:,,;'''::::;;'''''''''+++++;;:;@:::@@@@@@@@@@;::@@@@:@@@@@@@@@@@@@@@@;##'...,;;;;;;;'' 
+  '';'';;;;,,:.:''''';;;;;;'''''''''++'+;;;;;::::::::::@@@@@@@@@@@@@@@@@@@@@@@@#''',..:;';;;;;;' 
+ ,@@@@@@@@#';:@@@@@@'''''';;;''''+'++++###@'++#@'@@@@@@@@@@@@@@@@:;@@:@@@@@@@@@@@@@:..''+@@@@@;':
+ @#@'@@@@@+@+#'@@#'#'';.;:;;;;;;;;;;''''';';''++#@:+@@@@'@##@@::++#@@@::@#@'@++++;;;:;;+'@@++@'''
+ @@@+@@@@@@#+++@@@+##';;;;;;;;;;;;;;;;;;;'''+++#:+@@@@@@@@@@+:'#@@;@@@@+;:#+@#@#@+;+;:++@@@@@@@''
+ +#@#@@@@@@#+#@#@@@@@;;;;;;::;;;;;;;;;::;:::;''@'@@@@@@@#'@#+@@'@@#'@@@@#'@+@#@#@@+;@@;@@@#@@@@''
+:##@+@@@@@@@@@@@@@@@@@@;;;;;;;'+#@@@@+;;;;;;;;#++'+@@@##@;@;@@@+@@+;+@##@@;@@'@#@;';;#@@@##@@@#';
+##@+'@@@@@@''+#@@@@#@++;@'';@#+#++#@##@';;;;;;@@@@@#+;;;;@#+@@@#';'#;'@@#@;@@;@#'+###@@@@@@@@@@''
+ +#++@@@@@#@@+'#@@@@@@@@+@#'@@@@@#+@@@@@';;;;;@@@@@@@@@@@@#;@#@@;@@#@@;';;;@@;@+##+@#@@@@@@+@@@''
+ + `+@@@@@+#++;@@@@@@@#@@'#@#@@@@@+@@@+#@';;;'#+@@@@@#+;;;#;@@@@;#@;;';'@@;@#:;;'@@@@+@@@;:;@@@@#
+    +@@@@@+@+';@@@@@@@#@@@#@@@@@@'';'++'@@''''++@+''@#';;;@;@@@@@#@''+;@@@'@#;@@@@@@@@@#'+''#@@  
+    +@@@@@#;  ;@@@@@@@@@@@@#@@@@@@;@@@+@@@#+@@#++@#;#@@+''@;@@@@+#@@ @'+;;'@@+@@@@@#@@+:''@##@@  
+    +@@@@@#;  :@@@@#@@@@@'@@@@@@@@;##@'@@,    @+#@@@:@,    :++#@+@.  @@@@@+@@+@@@@@+@@+#:#@@@@@  
+    #@@@@@#;  :@@@@#@+##@;@##@+';;+@#@@@+.    ,'#@@@@:@`   +#@#++@:  +@@@@@@#+@@@@@#++@#:@@@@@@  
+    #@@@@+#;  :@@@@#@'@#@+@@++@@+#@@@@@@:;;;:: @+@@@@@+;';@@@@@@@''@;@@@@+@@#@@@@@#@@@@+:@@@@@@  
+    #@@@@##;  :#@@@@@'@@@'@@;+#@@@@@@#+@:@@@@:;;'@@@@@@@@'#:#@#@@####@@@@'@@+@#@@@@#::;+:@@@@@@` 
+    +@@@@@#;  :@#@##@'@@@'@@@;@#@@@@@@'@:@@#@:#,@'@@#@@@@+@;@@@@@@@+#@@@+@@;@##@@@@@`  ;:@@@@@@` 
+    +@@@@@#;  '@@##@#+@@@'@#.';@#@@@@;@@:@@@@:@. @';#@@@@+@: @@@@@@#@@@@@@@ +:@@@@@@   ;:@@@@@@  
+    +@@@@@#;  ++#@@@#'++;:#;  @;;;;;;;@@::::::@`  :@:::;;@@`  @+++##@@+@@@: #::++#@@   ;:'+;+#@  
+    @@@@@@#;  @@@@@@@#@@@@@;   ;@@@@@@@;@@@@@@@    `'@@@@@@    :@@:@'@#@@:  @@@@@@@+   ;@@@@@@@  
+      ;''';`   .'##@:.:#@@'`     :;+#@;`  ;##@:       :;++`     `;@@@@@;      :#++':     :#@@#:  
