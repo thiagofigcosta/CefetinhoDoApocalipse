@@ -127,7 +127,7 @@ void powerUp::checkCollisionWithPlayer(nTPoint pos,nTPoint size){
                 player->life=3;
             }
         }else if(type==1){
-            player->lives++;
+            if(!Scenes::freeGameMode)player->lives++;
         }else if(type==2){
             player->makeInvencible(7000);
             al->playSoundByName("cafeSong");
