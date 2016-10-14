@@ -32,7 +32,7 @@ nTPoint Blocks::defaultBlockSize=Util::nTPointSet(32,32,0);
 float Blocks::imunityTime=150;
 
 GLuint Blocks::getTextureByIndex(){
-    return GL::getTextureByName(getTexNameByIndex(this->type)); 
+    return GL::getTextureByName(getTexNameByIndex(this->type));  
 }
 
 string Blocks::getTexNameByIndex(int BlockType){
