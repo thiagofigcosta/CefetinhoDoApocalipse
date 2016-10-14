@@ -249,7 +249,10 @@ void Blocks::draw(){
             else
                 al->playSoundByName("BlockBreak");
           this->isVisible=false;
-          delete this;
+          Blocks* bl=(Blocks*)this;
+         this->pos.x=-16;
+         this->pos.y=-16;
+         //delete bl;
         }
     }
 }
@@ -409,7 +412,10 @@ void Blocks::applyDamage(float damage){
       if(brokeStage<0){
         al->playSoundByName("BlockBreak");
         this->isVisible=false;
-        delete this;
+        Blocks* bl=(Blocks*)this;
+         this->pos.x=-16;
+         this->pos.y=-16;
+         //delete bl;
     }
     damageState=true;
     timeToVunerability=GL::getGameMs()+imunityTime;   
