@@ -1,53 +1,64 @@
 # The.COM GAME
+```
+#####################
+#*  * **** *  *  ** #
+#** * *  * ** * *  *#
+#* ** **** * ** *  *#
+#*  * *  * *  *  ** #
+#####################
+```
+DevelopedBy: the.COM Games
+email: nanotechbr.corp@gmail.com
+youtube: https://www.youtube.com/user/LegiaoGamerBR
 
 -----------------------THE LEGENDS OF DECOM------------------------
 -------------------------------------------------------------------
 -------------------------Bernard Menezes---------------------------
 --------------------------Thiago F Costa---------------------------
---------------------------Tiago Ara˙jo-----------------------------
+--------------------------Tiago Ara√∫jo-----------------------------
 
 
-A ideia do jogo È mostrar a trajetÛria do nosso herÛi cefetiano no perÌodo do tÈcnico atÈ a graduaÁ„o.
+A ideia do jogo √© mostrar a trajet√≥ria do nosso her√≥i cefetiano no per√≠odo do t√©cnico at√© a gradua√ß√£o.
 
-… preciso muito esforÁo para passar nas provas, conseguir vencer o ENEM, manter o coeficente alto, terminar
+√â preciso muito esfor√ßo para passar nas provas, conseguir vencer o ENEM, manter o coeficente alto, terminar
 o TCC
-, enfim s„o muitas as dificuldades. A aplicaÁ„o ainda contÈm uma ferramenta de editor de mapas,
+, enfim s√£o muitas as dificuldades. A aplica√ß√£o ainda cont√©m uma ferramenta de editor de mapas,
 
-assim vocÍ pode alÈm de trabalhar suas habilidades no jogo, mostrar seu lado criativo!!
+assim voc√™ pode al√©m de trabalhar suas habilidades no jogo, mostrar seu lado criativo!!
 
 Ferramentas:
-*Editor de mapas -> Feito para construÁıes lÛgicas, (uma entrada de teletransporte, deve ter uma saÌda...);
-*PowerUp e Ba˙s (quebram ao serem atingidos por um ataque) -> + 1 vida, upgrade de espada, regresso de espada ou deixa player invencÌvel;
+*Editor de mapas -> Feito para constru√ß√µes l√≥gicas, (uma entrada de teletransporte, deve ter uma sa√≠da...);
+*PowerUp e Ba√∫s (quebram ao serem atingidos por um ataque) -> + 1 vida, upgrade de espada, regresso de espada ou deixa player invenc√≠vel;
 *Bloco de mola -> Impulsiona player;
 *Blocos decorativos;
-*Blocos maciÁos -> Possuem coliss„o;
-*Blocos n„o maciÁos -> Sem coliss„o;
+*Blocos maci√ßos -> Possuem coliss√£o;
+*Blocos n√£o maci√ßos -> Sem coliss√£o;
 *Blocos com movimento vertical;
 *Blocos com movimento horizontal;
 *Portas e Canos -> Teletransportam o personagem ao apertar para baixo;
-*Inimigos -> Vida cheia = F, vida mÌnima = A;
-*BOSS -> N„o possui movimento, porÈm n„o o subestime;
-*3 nÌveis (cefetinho, graduaÁ„o e pÛs-graduaÁ„o);
-*C·lculo de coeficiente de acordo com seu desempenho na fase;
-*Blocos tematicos -> LanÁador de Intercampi, lanÁador de Erro 404 e bloco de TP (metas da fase);
+*Inimigos -> Vida cheia = F, vida m√≠nima = A;
+*BOSS -> N√£o possui movimento, por√©m n√£o o subestime;
+*3 n√≠veis (cefetinho, gradua√ß√£o e p√≥s-gradua√ß√£o);
+*C√°lculo de coeficiente de acordo com seu desempenho na fase;
+*Blocos tematicos -> Lan√ßador de Intercampi, lan√ßador de Erro 404 e bloco de TP (metas da fase);
 *Blocos destrutivos;
-*CheckPoints -> No formato de diploma, salvam sua ultima posiÁ„o;
-*OpÁıes -> Ativa e desativa m˙sicas e sons;
+*CheckPoints -> No formato de diploma, salvam sua ultima posi√ß√£o;
+*Op√ß√µes -> Ativa e desativa m√∫sicas e sons;
 *Modo campanha e modo livre (permite jogar no mapa criado);
 
 Formas de levar dano:
 *Atingido por inimigos;
-*Atingido por parabolÛides hiperbÛlicos lanÁados pelo BOSS (teste sua agilidade ao defender com a espada);
+*Atingido por parabol√≥ides hiperb√≥licos lan√ßados pelo BOSS (teste sua agilidade ao defender com a espada);
 *Atingido por bloco vertical de cacto;
 *Atingido pelo Error 404;
 *Atingido pelo intercampi;
 *Contato com lava;
 
 HUD:
-Mostra o nÌvel de espada (coraÁıes) no instante, quantas vidas extras o jogador tem, a fase que se encontra e o tempo gastado na mesma.
-Obs: Quando o jogador perde todas suas vidas extras, ele È jubilado!! ;(
+Mostra o n√≠vel de espada (cora√ß√µes) no instante, quantas vidas extras o jogador tem, a fase que se encontra e o tempo gastado na mesma.
+Obs: Quando o jogador perde todas suas vidas extras, ele √© jubilado!! ;(
 
-para instalar È so substituir a pasta "Maps" baixada pela maps do seu jogo. AtÈ la se divirta
+para instalar √© so substituir a pasta "Maps" baixada pela maps do seu jogo. At√© la se divirta
 com o modo de criacao de mapas customizados :D
 
 (Jogo desenvolvido e otimizado para Linux(preferencia de instalacao))
@@ -57,15 +68,16 @@ Abrir .exe
 Link = http://www.4shared.com/zip/1tTfWqcCba/TheCOM-w32.html
 
 Rodar em Linux:
-… obrigatÛrio ter instalado em seu computador:
+√â obrigat√≥rio ter instalado em seu computador:
 *Freeglut;
 *GL;
 *GLEW;
 *Openal;
-Baixar o diretÛrio em = https://github.com/thiagofigcosta/The.COM-Game
-Abrir terminal na pasta inicial do diretÛrio e executar utilizando "make run".
+Baixar o diret√≥rio em = https://github.com/thiagofigcosta/The.COM-Game
+Abrir terminal na pasta inicial do diret√≥rio e executar utilizando "make run".
 
-O jogo foi desenvolvido para o evento "DECOM Celebrations", logo n„o tem fins lucrativos.
+O jogo foi desenvolvido para o evento "DECOM Celebrations", logo n√£o tem fins lucrativos.
+```
                              `;';;;;,,;;';;';;';:::''';,,;;;;;;:;';;'                            
                             `;';;;;,,,;;';;';;';';';@;;;;;;;;';';;;;'                            
                           .'';';;;,,,,;;;;'';;;::;+@@@';;;';;,,:;;:;;`                        
@@ -150,3 +162,4 @@ O jogo foi desenvolvido para o evento "DECOM Celebrations", logo n„o tem fins lu
     +@@@@@#;  ++#@@@#'++;:#;  @;;;;;;;@@::::::@`  :@:::;;@@`  @+++##@@+@@@: #::++#@@   ;:'+;+#@  
     @@@@@@#;  @@@@@@@#@@@@@;   ;@@@@@@@;@@@@@@@    `'@@@@@@    :@@:@'@#@@:  @@@@@@@+   ;@@@@@@@  
       ;''';`   .'##@:.:#@@'`     :;+#@;`  ;##@:       :;++`     `;@@@@@;      :#++':     :#@@#:  
+      ```
