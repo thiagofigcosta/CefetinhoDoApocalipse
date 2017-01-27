@@ -54,7 +54,7 @@ bool GL::rightMouseReleased=false;
 unsigned long int GL::framesInGame=0;
 nTPoint GL::mousePos;
 nTPoint GL::rawMousePos;
-GLuint GL::GLlist=glGenLists(1);
+GLuint GL::GLlist;//=glGenLists(1);
 
 
 

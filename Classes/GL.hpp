@@ -1,7 +1,11 @@
 #ifndef GL_H
 #define GL_H
 #include <GL/glew.h>
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/freeglut.h>
+#endif
 #include <time.h>
 #include "../Libs/soil/SOIL.h"
 #include "Util.hpp"

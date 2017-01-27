@@ -2,6 +2,7 @@
 
 
 mapEdit::mapEdit() {
+mapEdit::GLlist=glGenLists(1);
 }
 
 mapEdit::mapEdit(const mapEdit& orig) {
@@ -14,7 +15,7 @@ nTPoint mapEdit::scale=Util::nTPointSet(0.8,0.8,1);
 nTPoint mapEdit::HUDarea=Util::nTPointSet(650,500,1);
 nTPoint mapEdit::size=Util::nTPointSet(0,0,1);
 string mapEdit::input;
-GLuint mapEdit::GLlist=glGenLists(1);
+GLuint mapEdit::GLlist;
 int mapEdit::currentBlock=1;
 string mapEdit::blankField="_";
 int mapEdit::currentBackground=0;

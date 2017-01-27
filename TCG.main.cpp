@@ -1,14 +1,17 @@
 #include "importLibs.h"
+
 int main(int argc, char** argv) {
-    Enemy::registerNicks(); 
-    mapEdit::definePages();
     vector<GLenum> enables;
     clearColor.setColor(0,0,0,0);
     enables.push_back(GL_DEPTH_TEST);
     enables.push_back(GL_BLEND);
     enables.push_back(GL_ALPHA_TEST);
     GL *gl=new GL("The.COM Games",30,GLUT_DOUBLE | GLUT_RGBA|GLUT_DEPTH|GLUT_STENCIL|GLUT_ALPHA,
-         800,600,clearColor,true,enables,argc,argv);
+                  800,600,clearColor,true,enables,argc,argv);
+    Enemy::registerNicks();
+    mapEdit::definePages();
+    
+    
     
     if(!loadSettings()) if(Util::DEBUG) cout<<"erro ao carregar configs"<<endl;
     

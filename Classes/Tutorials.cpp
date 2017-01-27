@@ -9,7 +9,7 @@ Tutorials::Tutorials(string text,int key){
   this->isPaused=false;
   // this->draw();
   pressedKey=0;
-  GLlist=glGenLists(1);
+  //GLlist=glGenLists(1);
 };
 
 Tutorials::Tutorials(const Tutorials& orig) {

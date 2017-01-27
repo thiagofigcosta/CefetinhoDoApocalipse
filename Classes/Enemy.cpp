@@ -242,4 +242,5 @@ GLuint Enemy::lifeLetter(){
     return GL::getTextureByName("E");
   if(Life>0.7)
     return GL::getTextureByName("F");
+  return GL::getTextureByName("F");
 }
